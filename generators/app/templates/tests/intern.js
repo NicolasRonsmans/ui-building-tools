@@ -12,10 +12,7 @@ define({
       }
     ],
     paths: {
-      'template': 'js/src/template',
-      'utils': 'js/src/utils',
-      'cards': 'js/src/cards',
-      'card': 'js/src/card'
+      // TODO
     }
   },
   suites: ['tests/app'],

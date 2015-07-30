@@ -9,15 +9,5 @@
     "requirejs": "latest"
   },
   "devDependencies": {
-    "grunt": "latest",
-    "grunt-contrib-connect": "latest",
-    "grunt-contrib-csslint": "latest",
-    "grunt-contrib-jshint": "latest",
-    "grunt-contrib-less": "latest",
-    "grunt-contrib-requirejs": "latest",
-    "grunt-contrib-watch": "latest",
-    "grunt-hogan": "latest",
-    "lesshat": "latest",
-    "intern": "latest"
   }
 }

@@ -9,5 +9,6 @@
     "requirejs": "latest"
   },
   "devDependencies": {
+    "grunt": "latest"
   }
 }

@@ -27,14 +27,18 @@ module.exports = yeoman.generators.Base.extend({
 
   writing: {
     all: function () {
-      this.directory(this.sourceRoot(), this.destinationRoot());
-      this.fs.copyTpl(
-        this.templatePath('index.html'),
-        this.destinationPath('index.html'),
-        {
-          userName: this.props.userName
-        }
-      );
+      this.directory(this.sourceRoot() + '/_css', this.destinationRoot() + '/css');
+      this.directory(this.sourceRoot() + '/_js', this.destinationRoot() + '/js');
+      this.directory(this.sourceRoot() + '/_tests', this.destinationRoot() + '/tests');
+      this.fs.copyTpl(this.templatePath('_index.html'), this.destinationPath('index.html'), {
+        userName: this.props.userName
+      });
+      this.copy('_package.json', 'package.json');
+      this.copy('_Gruntfile.js', 'Gruntfile.js');
+      this.copy('gitignore', '.gitignore');
+      this.copy('editorconfig', '.editorconfig');
+      this.copy('jshintrc', '.jshintrc');
+      this.copy('csslintrc', '.csslintrc');
     }
   },
 
